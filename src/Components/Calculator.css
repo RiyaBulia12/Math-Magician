@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  min-width: 25rem;
+  flex-direction: column;
+}
+
+.answer,
+.col {
+  display: flex;
+  flex: 0 1 100%;
+}
+
+.answer {
+  justify-content: flex-end;
+  background-color: #acadb8;
+  padding: 0.625rem;
+}
+
+.answer,
+.btn {
+  border-radius: unset;
+  border: none;
+  height: 3.125rem;
+  font-size: 1.25rem;
+}
+
+.last-col {
+  background-color: #f5913e !important;
+}
+
+.btn {
+  flex: 0 1 25%;
+  font-size: 0.9375rem;
+  background-color: #e0e0e0;
+  border-left: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  font-weight: 600;
+}
+
+.zero {
+  flex-grow: 2;
+}
