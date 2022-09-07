@@ -47,7 +47,7 @@ class Calculator extends React.Component {
          </div>
          <div className="col">
            <button type="button" className="btn zero" onClick={this.onClickHandler}>0</button>
-           <button type="button" className="btn" onClick={this.onClickHandler}>•</button>
+           <button type="button" className="btn dot" onClick={this.onClickHandler}>.</button>
            <button type="button" className="btn last-col" onClick={this.onClickHandler}>=</button>
          </div>
        </div>
