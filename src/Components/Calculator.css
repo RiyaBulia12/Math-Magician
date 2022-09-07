@@ -40,3 +40,7 @@
 .zero {
   flex-grow: 2;
 }
+
+.dot {
+  font-size: 1.5rem;
+}
