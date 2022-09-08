@@ -28,6 +28,11 @@
   background-color: #f5913e !important;
 }
 
+.last-col:hover {
+  cursor: pointer;
+  background-color: #f58123 !important;
+}
+
 .btn {
   flex: 0 1 25%;
   font-size: 0.9375rem;
@@ -35,6 +40,11 @@
   border-left: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
   font-weight: 600;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #d1d1d1;
 }
 
 .zero {
