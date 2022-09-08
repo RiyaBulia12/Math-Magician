@@ -1,16 +1,15 @@
 import './App.css';
 import Calculator from './Components/Calculator';
 
-class App extends Calculator {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <Calculator />
-        </header>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Calculator</h1>
+        <Calculator />
+      </header>
+    </div>
+  );
 }
 
 export default App;
