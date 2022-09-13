@@ -2,7 +2,7 @@ import './App.css';
 import { Link, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home';
-import Calculator from './pages/CalculatorMain';
+import CalculatorMain from './pages/CalculatorMain';
 import Quote from './pages/Quote';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/calculator" element={<CalculatorMain />} />
           <Route path="/quote" element={<Quote />} />
         </Routes>
 
