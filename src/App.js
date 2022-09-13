@@ -1,7 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Home from './pages/Home';
+import Calculator from './components/Calculator';
+import Quote from './pages/Quote';
 
 function App() {
   return (
@@ -10,18 +12,20 @@ function App() {
         <nav className="navigation-menu">
           <h1 className="app-title">Math Magicians</h1>
           <ul className="menu-list">
-            <li id="list"> Home </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li> | </li>
-            <li id="create">Calculator</li>
+            <li><Link to="/calculator">Calculator</Link></li>
             <li> | </li>
-            <li id="contact">Quote </li>
+            <li><Link to="/quote">Quote</Link></li>
           </ul>
         </nav>
-        <React.StrictMode>
-          <Router>
-            <Home />
-          </Router>
-        </React.StrictMode>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
 
       </header>
     </div>

@@ -35,8 +35,13 @@
   font-size: 1.1875rem;
 }
 
-.menu-list > li:hover {
-  color: rgb(50, 84, 158);
+.menu-list > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-list > li > a:hover {
+  color: #f5913e;
   transition: all 0.5s;
   cursor: pointer;
 }
