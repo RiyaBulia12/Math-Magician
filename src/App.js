@@ -1,12 +1,32 @@
 import './App.css';
-import Calculator from './Components/Calculator';
+import { Link, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import Home from './pages/Home';
+import CalculatorMain from './pages/CalculatorMain';
+import Quote from './pages/Quote';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Calculator</h1>
-        <Calculator />
+        <nav className="navigation-menu">
+          <h1 className="app-title">Math Magicians</h1>
+          <ul className="menu-list">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li> | </li>
+            <li><Link to="/calculator">Calculator</Link></li>
+            <li> | </li>
+            <li><Link to="/quote">Quote</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<CalculatorMain />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
+
       </header>
     </div>
   );

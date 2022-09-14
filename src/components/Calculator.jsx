@@ -13,7 +13,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="container">
+    <div className="calc-container">
       <span className="answer">{calc.next || calc.total || 0}</span>
       <div className="col">
         <button type="button" className="btn" onClick={onClickHandler}>AC</button>
