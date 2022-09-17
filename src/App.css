@@ -65,4 +65,16 @@ p {
   line-height: 3rem;
   font-weight: 600;
   font-size: 1.7rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navigation-menu {
+    margin: 1rem 3rem;
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin: 3rem 5rem 0;
+  }
 }

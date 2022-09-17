@@ -61,3 +61,19 @@
 .calc-container {
   width: 40rem;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 7rem 1rem;
+  }
+
+  .calc-container {
+    width: 33rem;
+  }
+
+  .answer,
+  .btn {
+    height: 4rem;
+  }
+}
