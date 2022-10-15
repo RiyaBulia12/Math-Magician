@@ -4,7 +4,7 @@
 "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations & Read a random math-related quote.
 
 # Live Demo
-[Live Demo](https://moonlit-shortbread-872398.netlify.app/)
+[Live Demo](https://riya-math-magician.netlify.app/)
 
 ## Built With
 - HTML5, CSS3, ES6, Webpack, React
